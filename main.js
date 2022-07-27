@@ -76,7 +76,7 @@ async function abc(req, res) {
     console.log(err);
   }
 }
-const port = 8081;
+const port = process.env.PORT || 8081;
 var server = app.listen(port, function () {
   var host = server.address().address;
   var port = server.address().port;
